@@ -1,5 +1,6 @@
 import com.google.gson.Gson
 import model.PostModel
+import java.io.File
 
 val apiInterfaceGson: ApiInterface = ApiClient.getApiClientGson().create(ApiInterface::class.java)
 
@@ -51,6 +52,10 @@ fun main(args: Array<String>) {
         val nameFilter = postDetail.body()?.filter { it.name.endsWith('m', true) }
             ?.sortedBy { it.email }
         println(nameFilter)
+
+        val fileName = "postsdtails.txt"
+        var fileObject = File(fileName)
+        fileObject.writeText(postDetail.body().toString())
     }
 }
 
