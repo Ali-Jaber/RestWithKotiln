@@ -1,6 +1,7 @@
-package dagger
+package dagger2
 
-import org.jetbrains.kotlin.javax.inject.Inject
+import javax.inject.Inject
+
 
 class Coffee @Inject constructor(private val farm: Farm, private val river: River) {
     fun getCoffeeCup(): String {

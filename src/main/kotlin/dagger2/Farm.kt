@@ -1,6 +1,7 @@
-package dagger
+package dagger2
 
-import org.jetbrains.kotlin.javax.inject.Inject
+import javax.inject.Inject
+
 
 class Farm @Inject constructor() {
 

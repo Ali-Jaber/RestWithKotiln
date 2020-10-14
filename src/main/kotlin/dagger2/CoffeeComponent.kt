@@ -1,4 +1,6 @@
-package dagger
+package dagger2
+
+import dagger.Component
 
 @Component
 interface CoffeeComponent {
