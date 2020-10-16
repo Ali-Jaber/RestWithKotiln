@@ -2,7 +2,7 @@ package dagger2
 
 import javax.inject.Inject
 
-class River @Inject constructor(){
+class River {
 
     fun getWater(): String {
         return "water"

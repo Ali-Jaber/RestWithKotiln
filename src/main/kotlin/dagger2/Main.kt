@@ -1,6 +1,6 @@
 package dagger2
 
 fun main(args: Array<String>) {
-    val dagger = DaggerCoffeeComponent.create()
+    val dagger = DaggerCoffeeComponent.builder().sugar(3).build()
     println(dagger.getCoffee().getCoffeeCup())
 }
